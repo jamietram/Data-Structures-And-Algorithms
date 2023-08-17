@@ -1,0 +1,34 @@
+Queue:
+Please include the header "queue.h" and define your queue class and its enqueue, 
+dequeue member functions in a source file "queue.cc". You need to write your own
+test driver "queue_test.cc" to finish the homework problem.
+
+The codes shall be able to get compiled and run via the following commands:
+$ make queue_test
+$ ./queue_test n t
+
+Please use scientific notation for the average time. The time is in second. 
+The standard output is only one line in the format below:
+Average Time: 1.2e-06
+
+Example:
+$ make queue_test
+$ ./queue_test 100000 100000
+Average Time: 1.2e-6
+
+Double Linked List:
+Please include the header "dlist.h" and define your class and member functions
+in a source file "dlist.cc".  You need to write your own test driver "dlist_test.cc"
+to finish the homework problem.
+
+The code shall be able to get compiled and run via the following commands:
+$ make dlist_test
+$ ./dlist_test n
+
+The standard output is only one line in the following format:
+Time: time
+
+Example:
+$ make dlist_test
+$ ./dlist_test 1000
+Time: 0.001

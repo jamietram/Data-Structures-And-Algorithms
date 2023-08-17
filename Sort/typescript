@@ -1,0 +1,782 @@
+Script started on Mon 24 Apr 2023 11:13:36 AM PDT
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ make insertion-sort
+g++  -O3 -g -o driver.o -c driver.cc
+g++  -O3 -g -o sort.o -c sort.cc
+g++  -O3 -g -o insertion-sort.o -c insertion-sort.cc
+g++ -O3 -g -o insertion-sort driver.o sort.o insertion-sort.o
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 1[K]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 1
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1
+
+Quicksort: 4e-06 seconds ==> 0.25 million keys per second
+	(Array is sorted.)
+My sort: 0 seconds ==> inf million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 1[K2
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 2
+
+Quicksort: 3e-06 seconds ==> 0.666667 million keys per second
+	(Array is sorted.)
+My sort: 0 seconds ==> inf million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 2[K4
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 4
+
+Quicksort: 6e-06 seconds ==> 0.666667 million keys per second
+	(Array is sorted.)
+My sort: 0 seconds ==> inf million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 4[K8
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 8
+
+Quicksort: 5e-06 seconds ==> 1.6 million keys per second
+	(Array is sorted.)
+My sort: 1e-06 seconds ==> 8 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 8[K16
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 16
+
+Quicksort: 6e-06 seconds ==> 2.66667 million keys per second
+	(Array is sorted.)
+My sort: 1e-06 seconds ==> 16 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 16[K[K32
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 32
+
+Quicksort: 1e-05 seconds ==> 3.2 million keys per second
+	(Array is sorted.)
+My sort: 2e-06 seconds ==> 16 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 32[K[K64
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 64
+
+Quicksort: 1.4e-05 seconds ==> 4.57143 million keys per second
+	(Array is sorted.)
+My sort: 4e-06 seconds ==> 16 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 64[K[K128
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 128
+
+Quicksort: 0.000224 seconds ==> 0.571429 million keys per second
+	(Array is sorted.)
+My sort: 1e-05 seconds ==> 12.8 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 128[K[K[K256
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 256
+
+Quicksort: 0.000239 seconds ==> 1.07113 million keys per second
+	(Array is sorted.)
+My sort: 3.3e-05 seconds ==> 7.75758 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 256[K[K[K512
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 512
+
+Quicksort: 0.000286 seconds ==> 1.79021 million keys per second
+	(Array is sorted.)
+My sort: 0.000123 seconds ==> 4.1626 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 512[K[K[K1024
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1024
+
+Quicksort: 0.000229 seconds ==> 4.47162 million keys per second
+	(Array is sorted.)
+My sort: 0.000226 seconds ==> 4.53097 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 1024[K[K[K[K20480[K
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 2048
+
+Quicksort: 0.0006 seconds ==> 3.41333 million keys per second
+	(Array is sorted.)
+My sort: 0.001765 seconds ==> 1.16034 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ 4096
+4096: Command not found.
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ 8[K4096./insertion-sort 2048[K[K[K[K4096
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 4096
+
+Quicksort: 0.00114 seconds ==> 3.59298 million keys per second
+	(Array is sorted.)
+My sort: 0.007225 seconds ==> 0.56692 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ 1[K./insertion-sort 4096[K[K[K[K1[K8192
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 8192
+
+Quicksort: 0.001943 seconds ==> 4.21616 million keys per second
+	(Array is sorted.)
+My sort: 0.024677 seconds ==> 0.331969 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 8192[K[K[K[K16384
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 16384
+
+Quicksort: 0.004302 seconds ==> 3.80846 million keys per second
+	(Array is sorted.)
+My sort: 0.084376 seconds ==> 0.194178 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 16384[K[K[K[K[K32768
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 32768
+
+Quicksort: 0.008841 seconds ==> 3.70637 million keys per second
+	(Array is sorted.)
+My sort: 0.22886 seconds ==> 0.143179 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 32768[K[K[K[K[K65536
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 65536
+
+Quicksort: 0.017664 seconds ==> 3.71014 million keys per second
+	(Array is sorted.)
+My sort: 0.893117 seconds ==> 0.073379 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 65536[K[K[K[K[K131072
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 131072
+
+Quicksort: 0.034736 seconds ==> 3.77338 million keys per second
+	(Array is sorted.)
+My sort: 3.494 seconds ==> 0.0375135 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 131072[K[K[K[K[K[K262144
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 262144
+
+Quicksort: 0.064753 seconds ==> 4.04837 million keys per second
+	(Array is sorted.)
+My sort: 12.5372 seconds ==> 0.0209093 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 262144[K[K[K[K[K[K524288
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 524288
+
+Quicksort: 0.10493 seconds ==> 4.99655 million keys per second
+	(Array is sorted.)
+My sort: 49.964 seconds ==> 0.0104933 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort 524288[K[K[K[K[K[K1048576
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1048576
+
+Quicksort: 0.177385 seconds ==> 5.9113 million keys per second
+	(Array is sorted.)
+My sort: 216.161 seconds ==> 0.0048509 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ make clean
+rm -f core *.o *~ insertion-sort insertion-sort-bisearch mergesort
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ make insertion-sort-bisearch
+g++  -O3 -g -o driver.o -c driver.cc
+g++  -O3 -g -o sort.o -c sort.cc
+g++  -O3 -g -o insertion-sort-bisearch.o -c insertion-sort-bisearch.cc
+g++ -O3 -g -o insertion-sort-bisearch driver.o sort.o insertion-sort-bisearch.o
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 1
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1
+
+Quicksort: 4e-06 seconds ==> 0.25 million keys per second
+	(Array is sorted.)
+My sort: 0 seconds ==> inf million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 1[K2
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 2
+
+Quicksort: 5e-06 seconds ==> 0.4 million keys per second
+	(Array is sorted.)
+My sort: 1e-06 seconds ==> 2 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 2[K4
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 4
+
+Quicksort: 4e-06 seconds ==> 1 million keys per second
+	(Array is sorted.)
+My sort: 0 seconds ==> inf million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 4[K8
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 8
+
+Quicksort: 5e-06 seconds ==> 1.6 million keys per second
+	(Array is sorted.)
+My sort: 8e-06 seconds ==> 1 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 8[K16
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 16
+
+Quicksort: 7e-06 seconds ==> 2.28571 million keys per second
+	(Array is sorted.)
+My sort: 2.1e-05 seconds ==> 0.761905 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 16[K[K2[K32
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 32
+
+Quicksort: 9e-06 seconds ==> 3.55556 million keys per second
+	(Array is sorted.)
+My sort: 1.4e-05 seconds ==> 2.28571 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 32[K[K64
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 64
+
+Quicksort: 1.4e-05 seconds ==> 4.57143 million keys per second
+	(Array is sorted.)
+My sort: 1.8e-05 seconds ==> 3.55556 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 64[K[K128
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 128
+
+Quicksort: 0.00021 seconds ==> 0.609524 million keys per second
+	(Array is sorted.)
+My sort: 3e-05 seconds ==> 4.26667 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 128[K[K[K256
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 256
+
+Quicksort: 0.000223 seconds ==> 1.14798 million keys per second
+	(Array is sorted.)
+My sort: 5.4e-05 seconds ==> 4.74074 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 256[K[K[K512
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 512
+
+Quicksort: 0.00027 seconds ==> 1.8963 million keys per second
+	(Array is sorted.)
+My sort: 0.000115 seconds ==> 4.45217 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 512[K[K[K1024
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1024
+
+Quicksort: 0.000347 seconds ==> 2.95101 million keys per second
+	(Array is sorted.)
+My sort: 0.000266 seconds ==> 3.84962 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 1024[K[K[K[K2048
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 2048
+
+Quicksort: 0.000515 seconds ==> 3.9767 million keys per second
+	(Array is sorted.)
+My sort: 0.000684 seconds ==> 2.99415 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 2048[K[K[K[K4096
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 4096
+
+Quicksort: 0.000984 seconds ==> 4.1626 million keys per second
+	(Array is sorted.)
+My sort: 0.002325 seconds ==> 1.76172 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 4096[K[K[K[K8192
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 8192
+
+Quicksort: 0.002044 seconds ==> 4.00783 million keys per second
+	(Array is sorted.)
+My sort: 0.010024 seconds ==> 0.817239 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 8192[K[K[K[K16384
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 16384
+
+Quicksort: 0.004126 seconds ==> 3.97092 million keys per second
+	(Array is sorted.)
+My sort: 0.038406 seconds ==> 0.4266 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 16384[K[K[K[K[K32768
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 32768
+
+Quicksort: 0.008674 seconds ==> 3.77773 million keys per second
+	(Array is sorted.)
+My sort: 0.118432 seconds ==> 0.276682 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 32768[K[K[K[K[K65535[K6
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 65536
+
+Quicksort: 0.017028 seconds ==> 3.84872 million keys per second
+	(Array is sorted.)
+My sort: 0.412369 seconds ==> 0.158926 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 65536[K[K[K[K[K131072
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 131072
+
+Quicksort: 0.033497 seconds ==> 3.91295 million keys per second
+	(Array is sorted.)
+^[[A  My sort: 1.73355 seconds ==> 0.0756089 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 131072[K[K[K[K[K[K262144
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 262144
+
+Quicksort: 0.063935 seconds ==> 4.10016 million keys per second
+	(Array is sorted.)
+My sort: 7.33589 seconds ==> 0.0357344 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 262144[K[K[K[K[K[K524288
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 524288
+
+Quicksort: 0.09137 seconds ==> 5.73808 million keys per second
+	(Array is sorted.)
+My sort: 29.6585 seconds ==> 0.0176775 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./insertion-sort-bisearch 524288[K[K[K[K[K[K1048576
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1048576
+
+Quicksort: 0.167623 seconds ==> 6.25556 million keys per second
+	(Array is sorted.)
+My sort: 124.223 seconds ==> 0.00844107 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ make clean
+rm -f core *.o *~ insertion-sort insertion-sort-bisearch mergesort
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ make mergesort
+g++  -O3 -g -o driver.o -c driver.cc
+g++  -O3 -g -o sort.o -c sort.cc
+g++  -O3 -g -o mergesort.o -c mergesort.cc
+g++ -O3 -g -o mergesort driver.o sort.o mergesort.o
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 1
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1
+
+Quicksort: 4e-06 seconds ==> 0.25 million keys per second
+	(Array is sorted.)
+My sort: 0 seconds ==> inf million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 1[K2
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 2
+
+Quicksort: 5e-06 seconds ==> 0.4 million keys per second
+	(Array is sorted.)
+My sort: 2.1e-05 seconds ==> 0.0952381 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 2[K4
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 4
+
+Quicksort: 3e-06 seconds ==> 1.33333 million keys per second
+	(Array is sorted.)
+My sort: 5e-06 seconds ==> 0.8 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 4[K8
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 8
+
+Quicksort: 5e-06 seconds ==> 1.6 million keys per second
+	(Array is sorted.)
+My sort: 1e-05 seconds ==> 0.8 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 8[K16
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 16
+
+Quicksort: 7e-06 seconds ==> 2.28571 million keys per second
+	(Array is sorted.)
+My sort: 1.3e-05 seconds ==> 1.23077 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 16[K[K32
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 32
+
+Quicksort: 9e-06 seconds ==> 3.55556 million keys per second
+	(Array is sorted.)
+My sort: 3.5e-05 seconds ==> 0.914286 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 32[K[K63[K4
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 64
+
+Quicksort: 1.4e-05 seconds ==> 4.57143 million keys per second
+	(Array is sorted.)
+My sort: 3e-05 seconds ==> 2.13333 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 64[K[K128
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 128
+
+Quicksort: 0.00021 seconds ==> 0.609524 million keys per second
+	(Array is sorted.)
+My sort: 4.9e-05 seconds ==> 2.61224 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 128[K[K[K256
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 256
+
+Quicksort: 0.000243 seconds ==> 1.0535 million keys per second
+	(Array is sorted.)
+My sort: 8.9e-05 seconds ==> 2.8764 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 256[K[K[K512
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 512
+
+Quicksort: 0.000282 seconds ==> 1.8156 million keys per second
+	(Array is sorted.)
+My sort: 0.000158 seconds ==> 3.24051 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 512[K[K[K1024
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1024
+
+Quicksort: 0.000333 seconds ==> 3.07508 million keys per second
+	(Array is sorted.)
+My sort: 0.000255 seconds ==> 4.01569 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 1024[K[K[K[K2048
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 2048
+
+Quicksort: 0.000606 seconds ==> 3.37954 million keys per second
+	(Array is sorted.)
+My sort: 0.000642 seconds ==> 3.19003 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 2048[K[K[K[K4096
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 4096
+
+Quicksort: 0.001067 seconds ==> 3.8388 million keys per second
+	(Array is sorted.)
+My sort: 0.001325 seconds ==> 3.09132 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 4096[K[K[K[K8192
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 8192
+
+Quicksort: 0.002073 seconds ==> 3.95176 million keys per second
+	(Array is sorted.)
+My sort: 0.004087 seconds ==> 2.0044 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 8192[K[K[K[K16384
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 16384
+
+Quicksort: 0.003562 seconds ==> 4.59966 million keys per second
+	(Array is sorted.)
+My sort: 0.004785 seconds ==> 3.42403 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 16384[K[K[K[K[K32768
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 32768
+
+Quicksort: 0.00849 seconds ==> 3.8596 million keys per second
+	(Array is sorted.)
+My sort: 0.010584 seconds ==> 3.09599 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 32768[K[K[K[K[K65536
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 65536
+
+Quicksort: 0.015935 seconds ==> 4.11271 million keys per second
+	(Array is sorted.)
+My sort: 0.018981 seconds ==> 3.45272 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 65536[K[K[K[K[K131072
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 131072
+
+Quicksort: 0.025784 seconds ==> 5.08346 million keys per second
+	(Array is sorted.)
+My sort: 0.025307 seconds ==> 5.17928 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 131072[K[K[K[K[K[K262144
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 262144
+
+Quicksort: 0.065885 seconds ==> 3.97881 million keys per second
+	(Array is sorted.)
+My sort: 0.048234 seconds ==> 5.43484 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 262144[K[K[K[K[K[K524288
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 524288
+
+Quicksort: 0.104978 seconds ==> 4.99427 million keys per second
+	(Array is sorted.)
+My sort: 0.100813 seconds ==> 5.2006 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ ./mergesort 524288[K[K[K[K[K[K1048576
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+
+N == 1048576
+
+Quicksort: 0.19523 seconds ==> 5.37098 million keys per second
+	(Array is sorted.)
+My sort: 0.23948 seconds ==> 4.37855 million keys per second
+	(Array is sorted.)
+	(Arrays are equal.)
+
+]0;tramtl1@laguna:EECS-114-HW1[tramtl1@laguna EECS-114-HW1]$ exit
+exit
+
+Script done on Mon 24 Apr 2023 12:01:18 PM PDT
