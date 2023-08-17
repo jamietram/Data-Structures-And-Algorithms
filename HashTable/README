@@ -1,0 +1,92 @@
+Please read this README carefully. We grade your homework based on both your
+results and output format. Any difference between the format specified here
+will lead to 0 points for this homework.
+
+----------------
+Hashing
+----------------
+
+In the header 'HashTable.h', we declare the class and its member functions for
+you. You will need to implement at least the default constructor, 'insert' and
+'find' functions. Please don't alter any of the interfaces but feel free to add
+other functionalities if needed.
+
+We have created empty drivers for part B&C. Please don't change the name of the
+drivers. After implementing the necessary functionality, the test 'insert_test.cc' 
+should be able to compile and run as follows:
+
+% make insert_test
+% ./insert_test
+
+It should print out the average number of probes in exactly two lines:
+50% full: 10
+90% full: 20
+Note that there is no new line before, between or after the two line output.
+The numbers here are only to show the format and should not be interpreted as
+references for your result.
+
+The same requirements apply to 'search_test.cc'.
+
+----------------
+Edit Distance
+----------------
+
+You need to implement your driver "edit_distance.cc". We will compile you code
+as usual:
+
+% make edit_distance
+
+We should be able to run your driver in the following two ways: 
+
+1) ./edit_distance string1 to string2 
+
+User input string1 and string2. You driver will print out the value of edit
+distance and the edit table as follow:
+
+% ./edit_distance algorithm to analysis
+Edit Distance: 24
+Operation       z                               Cost    Total
+----------------------------------------------------------------
+initial string  *algorithm                      0       0
+insert a        a*algorithm                     3       3
+insert n        an*algorithm                    3       6
+right           ana*lgorithm                    0       6
+right           anal*gorithm                    0       6
+delete          anal*orithm                     2       8
+replace by y    analy*rithm                     4       12
+replace by s    analys*ithm                     4       16
+right           analysi*thm                     0       16
+delete          analysi*hm                      2       18
+delete          analysi*m                       2       20
+replace by s    analysis*                       4       24
+
+Note that 
+- We have included a function 'print_head' for the table. It specifies the width of each
+  column of the table.
+- The star "*" presents the position of the cursor.
+- This is the correct edit sequence from "algorithm" to "analysis". You can use
+  this example for debugging.
+
+2) ./edit_distance filename
+
+User provides an input file "filename", which is organized as described in the
+problem. You driver reads the file and prints out the edit distance as follow:
+
+% ./edit_distance input1
+Edit distance: 100
+
+There is only one line in the output.
+
+In summary, you will need to build three tests in your makefile:
+- insert_test for part B of the hashing problem
+- search_test for part C
+- edit_distance for the dynamic programming problem 
+As a result you will at least need to implement the following source codes:
+- HashTable.cc
+- insert_test.cc
+- search_test.cc
+- edit_distance.cc
+You may want to code the functions used in "edit_distance.cc" in separate header and source files. This is a suggestion but not requirement.
+Also feel free to add other functions to the HashTable class if needed.
+
+Good Luck!
